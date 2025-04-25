@@ -17,6 +17,6 @@ d3.csv("./data/screen_timev3.csv", d => {
   createTooltip();
   handleMouseEvents();
 
-  // populateDaysFilters(data);
+
 
 });
