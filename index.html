@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Children's Screentime</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/visualization.css">
+</head>
+<body>
+	<div class="container">
+			
+		<h1>Average daily screen time for children</h1>
+		<div class="intro"></div>
+		
+		<h2>Distribution screen time</h2>
+		<div class="intro">Some children watch a lot of TV, but most watch a little.</div>
+		<div class="filters-container">
+
+		  <div class="instructions">To explore this data set, click the buttons, mouse over or access
+			with the tab key.</div>
+			<br>
+		  <div class="responsive-svg-container">
+			<div id="scatterplot"></div>
+		  </div>
+		  
+		<div id="filters_gender"></div>
+		
+		<div id="histogram" class="responsive-svg-container"></div>
+		<div id="filters_day"></div>
+
+
+		<div class="source">
+			<h3>Data source</h3>
+			<p><a href="https://www.kaggle.com/datasets/ak0212/average-daily-screen-time-for-children/data">Average-daily-screen-time-for-children (Kaggle data set)</a></p>
+		</div>
+	</div>
+
+	<!-- Load your scripts here -->
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="js/shared-constants.js"></script>
+	<script src="js/resize.js"></script>
+	<script src="js/interactions.js"></script>
+	<script src="js/histogram.js"></script>
+	<script src="js/load-data.js"></script>
+</body>
+</html>
